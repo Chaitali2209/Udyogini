@@ -30,11 +30,11 @@ export const NavBar = () => {
   }, [])
 
   const onUpdateActiveLink = (value) => {
+
     setActiveLink(value);
   }
 
   return (
-    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -45,8 +45,10 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Login</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'causes' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('causes')}>SignUp</Nav.Link>
+              <Nav.Link href="/login" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{
+                // window.location.href = "/login"
+              } }>Login</Nav.Link>
+              <Nav.Link href="/register" className={activeLink === 'causes' ? 'active navbar-link' : 'navbar-link'} onClick={() => {}}>SignUp</Nav.Link>
               {/* <Nav.Link href="#detect" className={activeLink === 'detect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('detect')}>Detect</Nav.Link> */}
               {/* <Nav.Link href="#newsletter" className={activeLink === 'newsletter' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('newsletter')}>Consultation</Nav.Link> */}
             </Nav>
@@ -73,6 +75,5 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   )
 }
