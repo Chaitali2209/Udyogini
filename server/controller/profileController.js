@@ -1,6 +1,12 @@
 const RegisterModel = require("../models/RegisterModel.js");
 const jwt = require("jsonwebtoken");
 
+module.exports.getBusinessProfilesList = async(req,res)=>{
+    const businessProfileList = await RegisterModel.find({business: {$ne: null}});
+    console.log(businessProfileList);
+    res.send(businessProfileList);
+}
+
 module.exports.updateProfile = async (req,res) => {
     // console.log(req.files);
 

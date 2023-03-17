@@ -21,6 +21,12 @@ const userSchema = new mongoose.Schema({
     location: String, 
     gstn: String,
   }
+},{
+  toJSON: {
+    transform(doc, ret){
+      delete ret.password;
+    }
+  }
 })
 
 //model

@@ -23,4 +23,7 @@ router.post('/updateProfile',requireAuth,productImageUpload.fields([
   
   ]) ,profileController.updateProfile);
 
+
+router.get("/getBusinessProfileList",profileController.getBusinessProfilesList);
+
 module.exports = router;
