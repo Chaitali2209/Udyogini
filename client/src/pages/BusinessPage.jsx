@@ -4,6 +4,7 @@ import './BusinessPage.css';
 import BusinessFullCard from '../components/BusinessFullCard';
 import BusinessCard from '../components/BusinessCard';
 import { useEffect, useState } from 'react';
+// import { NavBar } from '../components/NavBar';
 
 function BusinessPage() {
   const [businessList, setBusinessList] = useState([]);
@@ -19,6 +20,7 @@ function BusinessPage() {
   },[])
   return (
     <div className="businessContainer">
+      {/* <NavBar /> */}
       <div class="topnav">
         <div class="search-container">
           <form action="">

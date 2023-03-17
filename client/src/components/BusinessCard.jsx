@@ -18,7 +18,7 @@ function BusinessCard({business,selectBusinessProfile}) {
                         <div class="product">Product: {business.productName}</div>
 
                         <div class="productRate">Product Rate : Rs {business.productRate}</div>
-                        {/* <div class="Contact">Contact: {business.}</div> */}
+                        <div class="Contact">Contact: 9987654321</div>
                     </div>
 
                     <div className="productImg">

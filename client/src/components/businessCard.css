@@ -1,6 +1,6 @@
 .businessCard{
     background-color: white;
-    width: 800px;
+    /* width: 800px; */
     height: 200px;
     border: 2px black solid;
     border-radius: 5px;
@@ -8,6 +8,7 @@
     margin-left: 50px;
     margin-bottom: 10px;
     padding: 10px;
+    padding-left: 40px;
 }
 
 .org{
@@ -45,7 +46,7 @@
   }
 
   .productImg img{
-    height: 120px ;
+    height: 110px ;
     width: 150px;
     margin: 10px;
   }

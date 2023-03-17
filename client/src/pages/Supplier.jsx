@@ -120,7 +120,7 @@ function Supplier(props) {
 
   return (
     <form onSubmit={handleSubmit} class="supplierContainer">
-      <NavBar />
+      <NavBar isLoggedIn={true} />
       {/* <div className="supplierBannerImg">
 
                 <img src="https://ffpct.com/wp-content/uploads/2018/09/image8.jpg" alt="" />
