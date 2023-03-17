@@ -57,7 +57,7 @@ const CommnunityPostForm = (props) => {
             TextContent: ResponseJson.TextContent,
             UserID: ResponseJson.UserID,
             Username: currentUser.name,
-            ProfilePicture: currentUser.profilePicture
+            profilePicture: currentUser.profilePicture
           }
           return [postObject,...prev];
         });
