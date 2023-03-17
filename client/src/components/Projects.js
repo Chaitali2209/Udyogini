@@ -44,6 +44,7 @@ export const Projects = () => {
       title: "Connect with other women Enterpreneurs",
       description: "-----------------",
       imgUrl: projImg1,
+      href:"/community"
     },
     // {
     //   title: "Diet Planner",

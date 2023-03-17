@@ -53,7 +53,7 @@ const LoginForm = () => {
         console.log(user);
         sessionStorage.setItem("user", JSON.stringify(user));
         currentUser.setState(user);
-        // window.location.href = "/";
+        window.location.href = "/";
       } else {
         const error = await response.json();
         alert(error.error);
