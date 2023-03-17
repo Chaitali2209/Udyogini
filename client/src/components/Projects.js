@@ -37,7 +37,7 @@ export const Projects = () => {
       title: "Have a look at Entrepreneurs list",
       description: "",
       imgUrl: projImg3,
-      href:'',
+      href:'/businessPage',
     }
   ];
   const projects_1= [

@@ -88,7 +88,8 @@ function Supplier(props) {
     });
 
     if(response.status === 200){
-      alert("Registered");
+      alert("profile updated");
+      window.location.href = "/";
     }
 
 
@@ -120,7 +121,7 @@ function Supplier(props) {
 
   return (
     <form onSubmit={handleSubmit} class="supplierContainer">
-      <NavBar isLoggedIn={true} />
+      <NavBar isLoggedIn={true} isRelative={true}/>
       {/* <div className="supplierBannerImg">
 
                 <img src="https://ffpct.com/wp-content/uploads/2018/09/image8.jpg" alt="" />
