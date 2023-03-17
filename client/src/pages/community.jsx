@@ -47,7 +47,7 @@ const Community = (props) => {
 
   return (
     <div className="Community">
-      <NavBar shadowNavbar={true} />
+      <NavBar shadowNavbar={true} isRelative={true}/>
 
       <div className="communityContainer">          {currentUser.state ? (
             <CommunityPostButton
