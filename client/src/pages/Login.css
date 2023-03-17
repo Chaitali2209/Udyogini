@@ -1,6 +1,6 @@
 .container1 {
 
-    background-image: url(https://wallpapercave.com/wp/wp5134484.jpg);
+    background-image: url("../assets/img/Up.png");
     background-size: cover;
     overflow: hidden;
     height: 100vh;
@@ -16,8 +16,8 @@
 }
 
 .form-group {
-    margin: 20px;
-    display: table-caption;
+    margin: 10px;
+    /* display: table-caption; */
 
 }
 
@@ -26,6 +26,7 @@
     font-size: large;
     font-weight: 30px;
     border-radius: 5px;
+    /* width:100%; */
 
 }
 
@@ -39,6 +40,7 @@ label {
     color: white;
     font-size: 20px;
     font-weight: 20px;
+    width:100%
 }
 
 .registerButton {
