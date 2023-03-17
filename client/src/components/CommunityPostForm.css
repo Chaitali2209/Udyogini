@@ -52,7 +52,7 @@
   
   .CommnunityPostForm > * {
     /* width: 100%; */
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.8);
     padding: 16px 24px;
 
 
@@ -76,6 +76,7 @@
     height: 50px;
     object-fit: cover;
     border-radius: 50px;
+    border: 0.5px solid black
   }
   
   .CommnunityPostForm .writeContent {
@@ -90,11 +91,14 @@
     border: none;
     outline: none;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px
   }
   
   .CommnunityPostForm .writeContent img {
     width: 100%;
-    border: 5px solid rgba(0,0,0,0.08);
+    border: 5px solid lightgray;
     border-radius: 10px;
   }
   
@@ -116,7 +120,8 @@
     align-items: center;
     font-size: 16px;
     color: var(--dark-text);
-    border: 1px solid var(--dark-text);
+    border: 1px solid black;
+    color: black;
     border-radius: 20px;
     padding: 5px 15px;
   }
@@ -125,6 +130,7 @@
     background-color: var(--dark-text);
     cursor: pointer;
     color: white;
+    background-color: lightgray;
   }
 
   #uploadPicture span{

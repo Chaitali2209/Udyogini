@@ -61,7 +61,7 @@ const Community = (props) => {
 
           {CommunityPostList.map((post) => (
             <CommunityPostCard
-              profileImage={post.ProfilePicture}
+              profileImage={post.profilePicture}
               username={post.Username}
               description={post.TextContent}
               postImage={post.ImageContent}
