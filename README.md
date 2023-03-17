@@ -1,1 +1,1 @@
-This is a PCOS detection system
+For the growth of rural women entrepreneuar.
