@@ -1,0 +1,53 @@
+.businessCard{
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.org{
+    height: 60px;
+}
+.logo img{
+ height: 50px ;
+} 
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.orgName, .orgLocation,  .product, .Contact, .productRate{
+
+    /* background: grey; */
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px;
+  
+  }
+  .orgName{
+    color: rgb(7, 121, 81);
+    font-weight:bolder
+  }
+
+  .org{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .productImg img{
+    height: 120px ;
+    width: 150px;
+    margin: 10px;
+  }
+
+

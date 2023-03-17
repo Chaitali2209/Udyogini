@@ -1,0 +1,106 @@
+.businessFullCardContainer{
+    /* background-color: grey; */
+    /* width: 900px; */
+    padding: 5px;
+    background: white;
+    /* backdrop-filter: brightness(0.5); */
+    /* overflow-y: scroll; */
+}
+
+.orgFull{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logoFull img{
+    height: 100px;
+    border-radius: 100%;
+
+}
+.orgNameFull{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.label{
+    color: rgb(4, 139, 85);;
+}
+.descriptionFull{
+  margin: 20px;
+}
+.orgLocationFull, .productFull, .miniOrderValue, .productRateFull{
+    height: 40px;
+    margin:2px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: white;
+    border: 2px rgb(228, 223, 223) solid;
+    border-radius: 5px;
+    font-weight: bolder;
+
+
+}
+
+.AboutUs{
+    word-wrap: break-word;
+    height: auto;
+    margin:2px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: white;
+    border: 2px rgb(228, 223, 223) solid;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.productImgFull img{
+ height: 150px;
+ width: 150px;
+ margin: 10px;
+}
+
+
+
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactFull{
+    background-color: rgb(6, 134, 91);
+    width: 70%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.ContactFull:hover{
+    background-color: rgb(5, 100, 68);
+    width: 70%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+
+
