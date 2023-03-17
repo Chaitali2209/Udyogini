@@ -84,3 +84,48 @@
 .businessCardOverflow {
   overflow-y: scroll;
 }
+
+.businessImg{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.businessImg img{
+  margin-top: 60px;
+  border-radius: 20px;
+}
+
+.supplierCardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.supplierCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* width: 400px; */
+  color: Black;
+  background: #fff;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  margin-top: 70px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+
+}
+
+.supplierCard h1{
+  margin: 0;
+}
+

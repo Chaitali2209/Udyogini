@@ -4,6 +4,7 @@
     padding: 5px;
     background: white;
     overflow-y: scroll;
+    max-height: 100vh;
 
     /* backdrop-filter: brightness(0.5); */
     /* overflow-y: scroll; */

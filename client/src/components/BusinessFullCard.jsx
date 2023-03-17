@@ -7,7 +7,7 @@ function BusinessFullCard({selectedBusinessProfile}) {
             <div class="businessFullCard">
                 <div class="orgFull">
                     <div class="logoFull"><img src="https://villagesonmacarthur.com/wp-content/uploads/2020/12/Blank-Avatar.png" alt="" /></div>
-                    <div class="orgNameFull">{selectedBusinessProfile.organizationName} </div>
+                    <div class="orgNameFull">{selectedBusinessProfile && selectedBusinessProfile.organizationName} </div>
                 </div>
 
                 <div className="descriptionFull">

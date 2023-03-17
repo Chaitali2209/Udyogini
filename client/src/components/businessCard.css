@@ -11,6 +11,10 @@
     padding-left: 40px;
 }
 
+.businessFullCardOverflow{
+  width: 60%;
+}
+
 .org{
     height: 60px;
 }
