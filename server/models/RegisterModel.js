@@ -13,11 +13,19 @@ const userSchema = new mongoose.Schema({
     minOrderValue: Number,
     productRate: Number,
     numberOfEmployee: Number,
+    aboutUs: String,
+    productImages: [],
   },
   buyer:{
     organizationName: String,
     location: String, 
     gstn: String,
+  }
+},{
+  toJSON: {
+    transform(doc, ret){
+      delete ret.password;
+    }
   }
 })
 

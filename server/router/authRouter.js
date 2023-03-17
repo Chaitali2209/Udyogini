@@ -20,9 +20,14 @@ const profileUpload = multer({ storage: storage });
 router.post("/register", profileUpload.single("profilePicture") ,authController.register);
 router.post("/login", authController.login);
 router.post("/checkUser",requireAuth,authController.checkUser);
-// router.get("/test",async (req,res)=>{
-//   const user = await RegisterModel.findById("64136d742aa6345b75a8daf5");
-//   console.log(user)
-// })
+router.post("/test",profileUpload.fields([
+  {name: "productImage1", maxCount: 1},
+  {name: "productImage2", maxCount: 1},
+  {name: "productImage3", maxCount: 1}
+
+]),async (req,res)=>{
+  console.log(req.files);
+  res.send(req.files);
+})
 
 module.exports = router;

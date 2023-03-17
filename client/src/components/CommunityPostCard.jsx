@@ -15,7 +15,7 @@ const CommunityPostCard = (props) => {
         </div>
 
         {props.postImage ? (
-          <img className="PostImage" src={props.postImage} />
+          <img className="PostImage" alt="" src={props.postImage} />
         ) : null}
       </div>
     </div>

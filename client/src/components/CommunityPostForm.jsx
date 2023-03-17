@@ -57,7 +57,7 @@ const CommnunityPostForm = (props) => {
             TextContent: ResponseJson.TextContent,
             UserID: ResponseJson.UserID,
             Username: currentUser.name,
-            ProfilePicture: currentUser.profilePicture
+            profilePicture: currentUser.profilePicture
           }
           return [postObject,...prev];
         });
@@ -75,15 +75,16 @@ const CommnunityPostForm = (props) => {
       <form onSubmit={handleSubmit} className="CommnunityPostForm">
         <div className="formHeader">Create Post
           <a className="close bi bi-x-square" onClick={props.close}>
+            x
           </a>
         </div>
         <div className="userDetail">
           <img
-            src={currentUser.ProfilePicture}
+            src={currentUser.profilePicture}
             alt=""
             id="userImage"
           />
-          <h3 className="username">{currentUser.FullName}</h3>
+          <h3 className="username">{currentUser.name}</h3>
         </div>
         <div className="writeContent">
           <textarea

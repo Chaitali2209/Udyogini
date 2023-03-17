@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    color: black;
 }
 
 /* .communityProfileContainer{
@@ -21,12 +22,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 .containerCommunity {
-
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color:transparent;
   font-family: 'Baloo Paaji 2', cursive;
+  color: black;
 }
 
 .Community .card {
