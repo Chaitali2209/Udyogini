@@ -3,6 +3,9 @@ body{
   background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(171,238,205,1) 100%);
   }
   
+  .Learn{
+    color: black;
+  }
   .Learning-container {
     margin: 0 auto;
     /* max-width: 800px; */

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Learn.css';
-
+import learn from '../assets/img/Learn.png';
+import Video from '../components/Video';
 const Learn = () => {
   return (
     <div className="Learn">
-
+        <img src={learn} alt="" />
       <div className="Learning-container">
         <h1 className="Learning-heading">Learning Page</h1>
         <p className="Learning-description">
@@ -46,15 +47,10 @@ const Learn = () => {
 
         <div className="main-video">
           <h2 className="heading">Our Video</h2>
-          <div className="videos">
-            <div className="video-1">
-              <iframe className="our-video" src="https://www.youtube.com/embed/2-crBg6wpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div> 
-            <div className="video-2">
-              <iframe className="our-video" src="https://www.youtube.com/embed/2-crBg6wpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
+          
         </div>
+
+        <Video />
 
         {/* <div className="main-photos">
           <h2 className="heading">Our Women Entrepreneur</h2>
@@ -64,7 +60,8 @@ const Learn = () => {
             <img src={image3} alt=""/>
           </div>
         </div> */}
-      </div>
+      </div> 
+      {/* <Video /> */}
 
     </div>
   )
