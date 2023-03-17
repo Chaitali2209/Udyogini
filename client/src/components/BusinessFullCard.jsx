@@ -25,11 +25,11 @@ function BusinessFullCard({selectedBusinessProfile}) {
                     </div>
 
                     <div className="productImgFull">
-                        <img src={selectedBusinessProfile.productImages[0]} alt="" />
+                        <img src={selectedBusinessProfile.productImages && selectedBusinessProfile.productImages[0]} alt="" />
 
-                        <img src={selectedBusinessProfile.productImages[1]} alt="" />
+                        <img src={selectedBusinessProfile.productImages && selectedBusinessProfile.productImages[1]} alt="" />
 
-                        <img src={selectedBusinessProfile.productImages[2]} alt="" />
+                        <img src={selectedBusinessProfile.productImages && selectedBusinessProfile.productImages[2]} alt="" />
                     </div>
 
                     <div className='contactContainer'>
