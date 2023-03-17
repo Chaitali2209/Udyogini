@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .form-group {
@@ -34,6 +35,9 @@
     border-radius: 5px;
     width:500px
 
+}
+.form-group label{
+    margin: 0px;
 }
 
 

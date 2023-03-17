@@ -572,7 +572,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer {
 
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/Down.png');
+  background-image: url('./assets/img/Footer.png');
+  /* background-color: #77d0cf; */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

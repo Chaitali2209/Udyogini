@@ -11,13 +11,13 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-           {/* {({ subscribe, status, message }) => ( */}
+           {/* {({ subscribe, status, message }) => (
             <Newsletter
-              // status={status}
-              // message={message}
-              // onValidated={formData => subscribe(formData)}
+              status={status}
+              message={message}
+              onValidated={formData => subscribe(formData)}
             />
-          {/* )} */}
+          )} */}
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>

@@ -70,7 +70,7 @@ const LoginForm = () => {
 
       <div className="registrationContainer">
         <form className="RegisterForm" onSubmit={handleSubmit}>
-          <h1 className="form-heading">Login Page</h1>
+          <h1 className="form-heading">Login</h1>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input

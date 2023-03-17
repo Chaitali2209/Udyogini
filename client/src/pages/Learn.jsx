@@ -4,6 +4,8 @@ import learn from '../assets/img/Learn.png';
 import Video from '../components/Video';
 import { Footer } from '../components/Footer';
 import { NavBar } from '../components/NavBar';
+import { Newsletter } from '../components/Newsletter';
+import { MailchimpForm } from '../components/MailchimpForm';
 const Learn = () => {
   return (
     <>
@@ -55,20 +57,21 @@ const Learn = () => {
         </div>
 
         <Video />
-        <Footer />
+        <MailchimpForm />
 
         {/* <div className="main-photos">
           <h2 className="heading">Our Women Entrepreneur</h2>
           <div className="w-photos">
-            <img src={image1} alt=""/>
-            <img src={image2} alt=""/>
-            <img src={image3} alt=""/>
+          <img src={image1} alt=""/>
+          <img src={image2} alt=""/>
+          <img src={image3} alt=""/>
           </div>
         </div> */}
       </div> 
       {/* <Video /> */}
 
     </div>
+        <Footer />
     </>
   )
 }

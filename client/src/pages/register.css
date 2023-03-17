@@ -7,6 +7,11 @@ margin: 0;
 padding: 0;
 }
 
+.navbarContainer{
+  height: 200px;
+}
+
+
 /* .imgProfile{
   width: 100px;
   display: flex;
@@ -15,7 +20,9 @@ padding: 0;
 
 .RegisterForm{
   background-color: rgba(0, 0, 0, 0);
+  padding: 2px;
 }
+
 
 .inputImg{
   display: none;
@@ -64,6 +71,11 @@ padding: 0;
   height:40px;
 }
 
+input.form-control{
+  margin: 5px;
+
+}
+
 .form-control{
   padding: 10px;
   font-size: large;
@@ -75,15 +87,17 @@ padding: 0;
 
 .RegisterForm{
  backdrop-filter: brightness(0.5);
- padding: 40px; 
+ /* padding: 40px;  */
 }
 
-
-
-label{
+.inputLabel{
+  margin-bottom: 5px;
+}
+.lblUpload{
   color: white;
   font-size: 20px;
   font-weight: 20px;
+  margin-bottom: 5px;
 }
 
 .registerButton{
@@ -94,6 +108,8 @@ label{
   font-size: 20px;
   font-weight: 20px;
   height: 50px;
+  margin: 13px;
+  border-radius: 5px;
 
 }
 

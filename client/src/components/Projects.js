@@ -30,7 +30,7 @@ export const Projects = () => {
       title: "Grow Your Business",
       description: "Grow your Business by using Udyogini's business model",
       imgUrl: projImg2,
-      href:'',
+      href:'/supplier',
       
     },
     {

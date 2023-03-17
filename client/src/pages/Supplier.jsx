@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import "./Supplier.css";
 import FormImg from "./FormImg.png";
+import { NavBar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
 function Supplier(props) {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -118,6 +120,7 @@ function Supplier(props) {
 
   return (
     <form onSubmit={handleSubmit} class="supplierContainer">
+      <NavBar />
       {/* <div className="supplierBannerImg">
 
                 <img src="https://ffpct.com/wp-content/uploads/2018/09/image8.jpg" alt="" />
@@ -266,6 +269,7 @@ function Supplier(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </form>
   );
 }

@@ -1,10 +1,12 @@
 body{
     background: rgb(255,255,255);
-  background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(171,238,205,1) 100%);
+    background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(171,238,205,1) 100%);
   }
   
   .Learn{
     color: black;
+    background-image: url("../assets/img/Up.png");
+    background-size: cover ;
   }
   .Learning-container {
     margin: 0 auto;

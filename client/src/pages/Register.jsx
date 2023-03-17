@@ -105,8 +105,7 @@ const RegisterForm = () => {
 
   return (
     <div className="container1">
-      <NavBar />
-      <div className="registrationContainer">
+<NavBar />      <div className="registrationContainer">
         <form className="RegisterForm" onSubmit={handleSubmit}>
           <div className="form-group">
             <h1 className="form-heading">Register</h1>
@@ -137,7 +136,7 @@ const RegisterForm = () => {
               ></input>
             </div>
 
-            <label htmlFor="name">Name</label>
+            <label className="inputLabel" htmlFor="name">Name</label>
             <input
               type="text"
               className="form-control"
@@ -149,7 +148,7 @@ const RegisterForm = () => {
             <span className="inputError">{errors.name}</span>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label className="inputLabel" htmlFor="email">Email</label>
             <input
               type="email"
               className="form-control"
@@ -161,7 +160,7 @@ const RegisterForm = () => {
             <span className="inputError">{errors.email}</span>
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label className="inputLabel" htmlFor="password">Password</label>
             <input
               type="password"
               className="form-control"
@@ -174,7 +173,7 @@ const RegisterForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password</label>
+            <label className="inputLabel" htmlFor="confirmPassword">Confirm Password</label>
             <input
               type="password"
               className="form-control"
