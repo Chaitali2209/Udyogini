@@ -1,15 +1,12 @@
-import React from 'react';
-import './Learn.css';
-import learn from '../assets/img/Learn.png';
-import Video from '../components/Video';
-import { Footer } from '../components/Footer';
-import { NavBar } from '../components/NavBar';
-const Learn = () => {
+import './App.css';
+import image1 from '../src/assets/Upasana Taku.png'
+import image2 from '../src/assets/Aditi Gupta.png'
+import image3 from '../src/assets/Divya Gokulnath.png'
+
+function App() {
   return (
-    <>
-    <NavBar />
-    <div className="Learn">
-        <img src={learn} alt="" />
+    <div className="App">
+
       <div className="Learning-container">
         <h1 className="Learning-heading">Learning Page</h1>
         <p className="Learning-description">
@@ -23,9 +20,9 @@ const Learn = () => {
         </p>
 
         <div className='main'>
-          <div className='Vision'>
-            <h2 className='heading'>Vision</h2>
-            <p className="Vision-description">
+          <div className='vission'>
+            <h2 className='heading'>Vission</h2>
+            <p className="vission-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               condimentum commodo felis, ut consectetur ipsum commodo vitae. In hac
               habitasse platea dictumst. Vivamus ut mauris vel tellus consectetur
@@ -50,27 +47,29 @@ const Learn = () => {
         </div>
 
         <div className="main-video">
-          <h2 className="Learning-heading">Our Video</h2>
-          
+          <h2 className="heading">Our Video</h2>
+          <div className="videos">
+            <div className="video-1">
+              <iframe className="our-video" src="https://www.youtube.com/embed/2-crBg6wpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+            <div className="video-2">
+              <iframe className="our-video" src="https://www.youtube.com/embed/2-crBg6wpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
 
-        <Video />
-        <Footer />
-
-        {/* <div className="main-photos">
+        <div className="main-photos">
           <h2 className="heading">Our Women Entrepreneur</h2>
           <div className="w-photos">
             <img src={image1} alt=""/>
             <img src={image2} alt=""/>
             <img src={image3} alt=""/>
           </div>
-        </div> */}
-      </div> 
-      {/* <Video /> */}
+        </div>
+      </div>
 
     </div>
-    </>
-  )
+  );
 }
 
-export default Learn
+export default App;
