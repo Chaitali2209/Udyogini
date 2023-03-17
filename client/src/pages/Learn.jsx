@@ -9,7 +9,7 @@ import { MailchimpForm } from '../components/MailchimpForm';
 const Learn = () => {
   return (
     <>
-    <NavBar />
+    <NavBar isLoggedIn={true} />
     <div className="Learn">
         <img src={learn} alt="" />
       <div className="Learning-container">
