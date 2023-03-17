@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { Router } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, href}) => {
 
   
 
@@ -21,6 +21,8 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
+          <br />
+          <span><a href={href}>Click here</a></span>
           <br />
           {/* BrowserRouter */}
           {/* <button >Click Here</button> */}
