@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./Login.css";
+import { NavBar } from "../components/NavBar";
 import CurrentUserContext from "../context/LoggedInUser/CurrentUserContext";
 
 const LoginForm = () => {
@@ -65,8 +66,11 @@ const LoginForm = () => {
 
   return (
     <div className="container1">
+      <NavBar shadowNavbar={true} />
+
       <div className="registrationContainer">
         <form className="RegisterForm" onSubmit={handleSubmit}>
+          <h1 className="form-heading">Login Page</h1>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -98,7 +102,7 @@ const LoginForm = () => {
 
           <small>
             {" "}
-            <a href="/register">Don't have an account? Sign Up</a>
+            <a className="form-control_anchor" href="/register">Don't have an account? Sign Up</a>
           </small>
         </form>
       </div>
