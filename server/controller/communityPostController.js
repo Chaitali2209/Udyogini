@@ -26,7 +26,7 @@ module.exports.getAllPosts = async (req,res) => {
         const newPosts = [];
         for(let i=0;i<Posts.length;i++){
             console.log(Posts[0].UserID);
-            const User = await RegisterModel.findById(Posts[0].UserID);
+            const User = await RegisterModel.findById(Posts[i].UserID);
             console.log(User);
             Posts[i]._doc["Username"] = User.name;
             Posts[i]._doc["profilePicture"] = User.profilePicture;
