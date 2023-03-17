@@ -6,6 +6,7 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Supplier from './pages/Supplier';
+import BusinessPage from './pages/BusinessPage';
 
 import Community from './pages/community';
 import CommunityPostsState from "./context/CommunityPost/CommunityPostsState"
@@ -26,6 +27,7 @@ root.render(
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/supplier' element={<Supplier/>}/>
+        <Route path='/businessPage' element={<BusinessPage/>}/>
 
         <Route path='/community' element={<CommunityPostsState><Community/></CommunityPostsState>}/>
         <Route path='/learn' element={<Learn />}></Route>
