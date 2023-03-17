@@ -63,7 +63,7 @@ export const Banner = () => {
                 <h1>{`Women Entrepreneurs in rural area?`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Do they get a good platform?", "How to grow your business?", "What can be done to upscale their business?" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Women entrepreneurship has been recognized as an important source of economic growth. Women entrepreneurs create new jobs for themselves and others and also provide society with different solutions to management, organization and business problems. However, they still represent a minority of all entrepreneurs.  </p>
                   <p>Women entrepreneurs often face gender-based barriers to starting and growing their businesses, like discriminatory property, matrimonial and inheritance laws and/or cultural practices; lack of access to formal finance mechanisms; limited mobility and access to information and networks, etc. Women’s entrepreneurship can make a particularly strong contribution to the economic well-being of the family and communities, poverty reduction and women’s empowerment, thus contributing to the Millennium development goals. Thus, governments across the world as well as various developmental organizations are actively undertaking promotion of women entrepreneurs through various schemes, incentives.</p>
-                  <button onClick={() => console.log('connect')} to="#contact">Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={() => window.location.href="/community"} to="/community">Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
             
