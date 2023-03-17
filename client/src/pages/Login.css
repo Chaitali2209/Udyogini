@@ -15,6 +15,12 @@
     height: 100vh;
 }
 
+.form-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-group {
     margin: 10px;
     /* display: table-caption; */
@@ -26,7 +32,7 @@
     font-size: large;
     font-weight: 30px;
     border-radius: 5px;
-    width:100%;
+    width:500px
 
 }
 
@@ -82,3 +88,19 @@ label {
     font-size: 20px;
 }
 
+.form-control_anchor {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 10px;
+        color: #fff;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.form-control_anchor:hover{
+    color: grey;
+    cursor: pointer;
+}

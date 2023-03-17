@@ -3,6 +3,7 @@ import "./CommunityPostCard.css";
 
 const CommunityPostCard = (props) => {
   return (
+    <div className="communitypostcard">
     <div className="PostCard">
       <div className="CardHeader">
         <img className="profilePic" src={props.profileImage} alt="" />
@@ -18,6 +19,7 @@ const CommunityPostCard = (props) => {
           <img className="PostImage" alt="" src={props.postImage} />
         ) : null}
       </div>
+    </div>
     </div>
   );
 };

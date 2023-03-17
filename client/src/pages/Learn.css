@@ -1,0 +1,66 @@
+body{
+    background: rgb(255,255,255);
+  background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(171,238,205,1) 100%);
+  }
+  
+  .Learn{
+    color: black;
+  }
+  .Learning-container {
+    margin: 0 auto;
+    /* max-width: 800px; */
+    padding: 50px;
+  }
+  
+  .Learning-heading {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .Learning-description {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-align: justify;
+  }
+  
+  .heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  
+  .videos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 450px;
+      width: 65%;
+    }
+    
+    .main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 3px 20px;
+      padding: 10px;
+      font-size: 20px;
+    }
+    
+  .Vision{
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-right: 10px;
+    /* width: 50% */
+    height: 100%;
+    padding: 15px;
+  }
+
+  .mission{
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-right: 10px;
+    /* width: 50%; */
+    padding: 15px;
+  }
