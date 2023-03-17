@@ -91,11 +91,13 @@ input{
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  color: black
   
 }
 
 .imgInput input{
     margin: 10px;
+
 }
 
 .formSubmitButton{

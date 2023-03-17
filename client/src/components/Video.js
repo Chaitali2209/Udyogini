@@ -14,16 +14,19 @@ const Videos = () => {
             id:1,
             poster:img1,
             videoUri:video1,
+            description: "Starting a New Business"
         },
         {
             id:2,
             poster:img1,
             videoUri:video1,
+            description: "Business Managment"
         },
         {
             id:3,
             poster:img1,
             videoUri:video1,
+            description: "Interpersonal Skills"
         },
     ]
   return (
@@ -56,6 +59,8 @@ const Videos = () => {
                             >
                                 <source src={item.videoUri} type="video/webm"/>
                             </Video>
+                            <span className='video-title'>Course Name:<br/>{item.description}</span>
+                            {/* <span>Hello World</span> */}
                         </div>
                     </div>
                 )
