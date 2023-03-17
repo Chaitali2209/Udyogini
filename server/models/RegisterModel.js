@@ -13,6 +13,8 @@ const userSchema = new mongoose.Schema({
     minOrderValue: Number,
     productRate: Number,
     numberOfEmployee: Number,
+    aboutUs: String,
+    productImages: [],
   },
   buyer:{
     organizationName: String,
