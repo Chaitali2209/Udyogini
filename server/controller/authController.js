@@ -74,3 +74,15 @@ module.exports.signout = (req, res) => {
     req.session = null;
     res.redirect("/signInPage");
 }
+
+module.exports.checkUser = async (req, res) => {
+    try {
+        const User = await RegisterModel.findById(req.decodedToken.id);
+        User.Password = undefined;
+        console.log("Checking user: " + req.decodedToken.id);
+        res.status(200).json({ User });
+    } catch (error) {
+        console.log(error.message);
+        res.status(403).json({error:error.message});
+    }
+}

@@ -1,0 +1,29 @@
+.CommunityPostButton{
+    /* background-color: white; */
+    background: #efe7e7e6;
+    box-shadow: 0 2px 5px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 17px );
+    padding: 10px;
+    border-radius: 0.8rem;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.CommunityPostButton > *{
+    margin: 5px;
+}
+
+.CommunityPostButton .BtnCommunityPost{
+    padding: 10px 20px;
+    border-radius: 50px;
+    flex-grow: 1;
+    text-align: start;
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,0.6);
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+
+    
+}

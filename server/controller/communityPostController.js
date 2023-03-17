@@ -25,14 +25,18 @@ module.exports.getAllPosts = async (req,res) => {
         const Posts = await CommunityPostModel.find();
         const newPosts = [];
         for(let i=0;i<Posts.length;i++){
-            const User = await RegisterModel.findById(Posts[i].UserID);
+            console.log(Posts[0].UserID);
+            const User = await RegisterModel.findById(Posts[0].UserID);
             console.log(User);
-            Posts[i]._doc["Username"] = User.FullName;
-            Posts[i]._doc["ProfilePicture"] = User.ProfilePicture;
+            Posts[i]._doc["Username"] = User.name;
+            Posts[i]._doc["profilePicture"] = User.profilePicture;
             newPosts.push(Posts[i]._doc);
         }
+        console.log(newPosts);
+
         res.status(200).json(newPosts.reverse());
     } catch (error) {
         res.status(403).json(error);
+        console.log(error)
     } 
 }

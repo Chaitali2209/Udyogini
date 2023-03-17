@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./Login.css";
+import CurrentUserContext from "../context/LoggedInUser/CurrentUserContext";
 
 const LoginForm = () => {
+  const currentUser = useContext(CurrentUserContext);
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -41,6 +44,7 @@ const LoginForm = () => {
       const response = await fetch("http://localhost:8000/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify(formData),
       });
       if (response.status === 200) {
@@ -48,13 +52,16 @@ const LoginForm = () => {
         const user = await response.json();
         console.log(user);
         sessionStorage.setItem("user", JSON.stringify(user));
-        window.location.href = "/";
+        currentUser.setState(user);
+        // window.location.href = "/";
       } else {
         const error = await response.json();
         alert(error.error);
       }
     }
   };
+
+  useEffect(()=>{console.warn(currentUser)},[currentUser.state]);
 
   return (
     <div className="container1">
