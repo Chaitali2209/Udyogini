@@ -9,6 +9,7 @@
     width: 700px;
     display: flex;
     flex-direction: row;
+    color: black;
 }
 
 .CommunityPostButton > *{
