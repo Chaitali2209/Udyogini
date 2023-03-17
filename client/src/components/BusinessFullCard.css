@@ -3,6 +3,8 @@
     /* width: 900px; */
     padding: 5px;
     background: white;
+    overflow-y: scroll;
+
     /* backdrop-filter: brightness(0.5); */
     /* overflow-y: scroll; */
 }

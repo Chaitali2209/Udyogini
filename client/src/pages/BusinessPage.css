@@ -1,23 +1,27 @@
-.businessContainer{
-  display:flex;
+.businessContainer {
+  display: flex;
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background: rgb(255,255,255);
-background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(171,238,205,1) 100%);
-color: black;
-  
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    333deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(171, 238, 205, 1) 100%
+  );
+  color: black;
+  overflow: hidden;
 }
 
-.businessImage{
+.businessImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
-.businessImage img{
+.businessImage img {
   height: 344px;
   width: 400px;
   border: 0px white solid;
@@ -29,43 +33,42 @@ color: black;
   justify-content: center;
 }
 
-.topnav{
+.topnav {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  width:100%;
-  
+  width: 100%;
 }
 
-.search-container form{
+.search-container form {
   margin: 30px;
   display: flex;
   flex-direction: row;
-  
 }
 
-.searchInput{
+.searchInput {
   width: 600px;
   height: 40px;
   /* border: 2px tra solid; */
-  
-  margin: 20px;
+  margin: 60px;
+  padding: 20px;
   margin-right: 0px;
 }
-.searchButton{
+
+.searchButton {
   width: 220px;
-  height: 44px;
+  height: 40px;
   border: 2px transparent solid;
-  margin: 20px;
+  margin: 60px;
   margin-left: 0px;
   background-color: rgb(44, 169, 119);
   color: white;
   cursor: pointer;
   font-size: larger;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.searchButton:hover{
+.searchButton:hover {
   width: 220px;
   height: 44px;
   border: 2px transparent solid;
@@ -75,17 +78,9 @@ color: black;
   color: white;
   cursor: pointer;
   font-size: larger;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.businessCardOverflow{
- overflow-y: scroll;
-}
-
-/* .businessFullCardOverflow{
+.businessCardOverflow {
   overflow-y: scroll;
-} */
-
-
-
-
+}

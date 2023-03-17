@@ -33,7 +33,7 @@ function BusinessFullCard({selectedBusinessProfile}) {
                     </div>
 
                     <div className='contactContainer'>
-                        <div class="ContactFull"><span>Contact:                 9237387481</span></div>
+                        <div class="ContactFull"><span>Contact:           9237387481</span></div>
                     </div>
                 </div>
 
