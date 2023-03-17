@@ -13,6 +13,9 @@ padding: 0;
   align-items:enter;
 } */
 
+.RegisterForm{
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .inputImg{
   display: none;

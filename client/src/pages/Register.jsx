@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { NavBar } from "../components/NavBar";
 import "./register.css";
 
 const RegisterForm = () => {
@@ -104,6 +105,7 @@ const RegisterForm = () => {
 
   return (
     <div className="container1">
+      <NavBar />
       <div className="registrationContainer">
         <form className="RegisterForm" onSubmit={handleSubmit}>
           <div className="form-group">
