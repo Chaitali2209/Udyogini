@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Community from './pages/community';
 import CommunityPostsState from "./context/CommunityPost/CommunityPostsState"
 import CurrentUserState from './context/LoggedInUser/CurrentUserState';
+import Learn from './pages/Learn';
 
 
 // import reportWebVitals from './reportWebVitals';
@@ -23,6 +24,7 @@ root.render(
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/community' element={<CommunityPostsState><Community/></CommunityPostsState>}/>
+        <Route path='/learn' element={<Learn />}></Route>
 
       </Routes>
     </BrowserRouter>

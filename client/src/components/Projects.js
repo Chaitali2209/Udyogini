@@ -24,16 +24,19 @@ export const Projects = () => {
       title: "Learning Entrepreneurial Skills",
       description: "Get a hold of various entrepreneurial skills",
       imgUrl: projImg1,
+      
     },
     {
       title: "Grow Your Business",
       description: "Grow your Business by using Udyogini's business model",
       imgUrl: projImg2,
+      
     },
     {
       title: "Have a look at Entrepreneurs list",
       description: "",
       imgUrl: projImg3,
+      
     }
   ];
   const projects_1= [
