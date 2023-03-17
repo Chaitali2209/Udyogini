@@ -11,16 +11,18 @@ module.exports.updateProfile = async (req,res) => {
     // console.log(req.files);
 
     res.id = req.decodedToken.id;
+    console.log(req.body.business);
     const retrivedData = await RegisterModel.findById(req.decodedToken.id);
     let business = {};
     let buyer = {}
-    req.body.business = JSON.parse(req.body.business).business;
+    req.body.business = JSON.parse(req.body.business);
     const productImages = []
     for(key in req.files){
         console.log(req.files[key][0] ? `${req.protocol}://${req.get('host')}/${req.files[key][0].path}` : "");
         productImages.push(req.files[key][0] ? `${req.protocol}://${req.get('host')}/${req.files[key][0].path}` : ""); 
         // console.log(req.files[key][0].path)
     }
+    console.log(req.body.business);
     req.body.business.productImages = productImages;
     // req.body.buyer = JSON.parse(req.body.buyer).buyer;
 
@@ -33,7 +35,7 @@ module.exports.updateProfile = async (req,res) => {
 }
 
 const updateBusinessProfile = async (business, decodedToken,res) => {
-    const params = ["organizationName","location","productName","minOrderValue","productRate","numberOfEmployee","productImages"];
+    const params = ["organizationName","aboutUs","location","productName","minOrderValue","productRate","numberOfEmployee","productImages"];
     const data = decodedToken.business;
     for(key of params){
         if (business[key])
