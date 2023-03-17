@@ -10,7 +10,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 // import SignUp from "./SignUp"
 // import {login} from "./components/Login"
 
-export const NavBar = () => {
+export const NavBar = ({isLoggedIn,isRelative}) => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -35,7 +35,7 @@ export const NavBar = () => {
   }
 
   return (
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar style={{position:isRelative ? "relative" : "absolute"}} expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
@@ -45,9 +45,19 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-            <Nav.Link href="/learn" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Learn</Nav.Link>
+              {
+              isLoggedIn ? 
+              <>
+              <Nav.Link href="/learn" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Learn</Nav.Link>
               <Nav.Link href="/supplier" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Grow</Nav.Link>
               <Nav.Link href="/" className={activeLink === 'causes' ? 'active navbar-link' : 'navbar-link'} onClick={() => {}}>Connect</Nav.Link>
+              </>:
+              <>
+                            <Nav.Link href="/login" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Login</Nav.Link>
+              <Nav.Link href="/register" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Signup</Nav.Link>
+              </>
+            }
+            
               {/* <Nav.Link href="#detect" className={activeLink === 'detect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('detect')}>Detect</Nav.Link> */}
               {/* <Nav.Link href="#newsletter" className={activeLink === 'newsletter' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('newsletter')}>Consultation</Nav.Link> */}
             </Nav>
