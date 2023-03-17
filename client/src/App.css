@@ -88,7 +88,7 @@ p.danger {
 /************ Navbar Css ************/
 nav.navbar {
   padding: 5px 0;
-  /* position: fixed; */
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -240,7 +240,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 0 0;
   background-image: url('./assets/img/Up.png');
   background-position: top center;
   background-size: cover;
@@ -311,7 +311,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 30px 0;
   position: relative;
   background-image: url('./assets/img/Down.png');
   background-position: top center;
@@ -580,11 +580,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .newsletter-bx {
   justify-content: center;
   text-align: center;
-  background: #FFFFFF;
+  background: rgba(0,0,0, 0.3);;
   border-radius: 55px; 
-  padding: 85px 125px;
+  padding: 55px 75px;
   margin-bottom: 80px;
   margin-top: 0px;
+}
+
+.newsletter-icon{
+  height: 180px;
+  width: 80px;
 }
 
 .newsletter-bx h3 {
@@ -592,17 +597,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 1px;
   text-align: center;
   line-height: 1.6em;
-  color: #121212;
+  color: black;
 }
 
 .newsletter-bx h6{
-  color: darkgray;
+  color: white;
   letter-spacing: 1px;
 }
 
 .new-doc-bx img{
-  height: 150px;
-  width: 100px;
+  height: 200px;
+  width: 180px;
   /* border: 1px solid black;
   border-radius: 50%; */
   margin: 10px;
