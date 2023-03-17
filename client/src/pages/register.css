@@ -1,24 +1,64 @@
 .container1{
-
-
 background-size:cover;
-overflow: hidden;
+justify-content: center;
+/* margin-top: 20vh; */
 height: 100vh;
 margin: 0;
 padding: 0;
-} 
+}
+
+/* .imgProfile{
+  width: 100px;
+  display: flex;
+  align-items:enter;
+} */
+
+
+.inputImg{
+  display: none;
+}
+
+.lblUpload{
+  /* background-color: #1111; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content; */
+  /* padding: 10px; */
+  cursor: pointer;
+
+}
+
+.imgProfile{
+  background-color: #1111;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  
+}
 
 .registrationContainer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 150vh; */
+    margin: 50px;
+    
 }
 
 .form-group{
-  margin: 20px;
+  /* margin: 20px; */
   display: table-caption;
 
+}
+.form-group input{
+  width: 350px;
+  padding:3px;
+  height:40px;
 }
 
 .form-control{
@@ -34,6 +74,9 @@ padding: 0;
  backdrop-filter: brightness(0.5);
  padding: 40px; 
 }
+
+
+
 label{
   color: white;
   font-size: 20px;
@@ -65,7 +108,7 @@ label{
   display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
    
 }
 
@@ -143,7 +186,7 @@ label{
 
 .logo img{
   
-   height:90px;
+   height:50px;
    border-radius: 100%;
   
 }
@@ -156,4 +199,21 @@ label{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-control_anchor {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control_anchor:hover{
+color: grey;
+cursor: pointer;
 }

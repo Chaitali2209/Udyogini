@@ -10,6 +10,8 @@
     -webkit-backdrop-filter: blur( 17px );
 }
 
+
+
 .PostCard:hover{
     /* background-color: rgb(241, 241, 241); */
     box-shadow: 1px 1px 27px 0px grey;

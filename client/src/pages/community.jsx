@@ -4,6 +4,7 @@ import "./Community.css";
 import { useState, useContext, useEffect } from "react";
 import Popup from "reactjs-popup";
 import CurrentUserContext from "../context/LoggedInUser/CurrentUserContext";
+import { NavBar } from "../components/NavBar";
 import CommunityPostsContext from "../context/CommunityPost/CommunityPostsContext";
 
 const Community = (props) => {
@@ -46,7 +47,7 @@ const Community = (props) => {
 
   return (
     <div className="Community">
-      {/* <Navbar shadowNavbar={true} /> */}
+      <NavBar shadowNavbar={true} />
 
       <div className="communityContainer">          {currentUser.state ? (
             <CommunityPostButton
