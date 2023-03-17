@@ -1,0 +1,84 @@
+.container1 {
+
+    background-image: url("../assets/img/Up.png");
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.registrationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-group {
+    margin: 10px;
+    /* display: table-caption; */
+
+}
+
+.form-control {
+    padding: 10px;
+    font-size: large;
+    font-weight: 30px;
+    border-radius: 5px;
+    /* width:100%; */
+
+}
+
+
+.RegisterForm {
+    backdrop-filter: brightness(0.5);
+    padding: 40px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    width:100%
+}
+
+.registerButton {
+
+    width: -webkit-fill-available;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    height: 50px;
+
+}
+
+.registerButton:hover {
+    width: -webkit-fill-available;
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.welcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(0.5);
+    padding: 50px;
+    font-size: 20px;
+}
+

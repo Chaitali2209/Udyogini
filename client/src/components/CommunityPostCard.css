@@ -1,0 +1,125 @@
+.PostCard{
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid var(--grey);
+    width: 700px;
+    margin: 10px;
+    background: #efe7e7e6;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 17px );
+}
+
+.PostCard:hover{
+    /* background-color: rgb(241, 241, 241); */
+    box-shadow: 1px 1px 27px 0px grey;
+
+}
+
+.PostCard > *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.PostCard .CardHeader{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+    /* background-color: white; */
+    border-bottom: 1px solid var(--grey);
+}
+
+.PostCard .CardHeader *{
+    margin: 5px;
+}
+
+.PostCard .profilePic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.PostCard .username{
+    font-size: 20px;
+}
+
+.PostCard .PostContent{
+    margin: 15px;
+}
+
+.PostCard .PostContent .PostDecription{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.PostCard .PostContent img{
+    width: 100%;
+}
+
+.PostCard .ActionButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 15px;
+    /* background-color: aqua; */
+}
+
+.ActionButtons{
+    /* background-color: rebeccapurple; */
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+
+.ActionButtons *{
+    /* background-color: rebeccapurple; */
+    /* margin-right: 10px; */
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.ActionButtons *:hover{
+    background-color: rgba(185, 185, 185, 0.267);
+}
+
+/* Comment Section */
+.overlay{
+    padding: 5px 22px;
+    max-height: 300px;
+    overflow-y: auto;
+    /* background-color: red; */
+}
+
+span.comment-title{
+    font-size: 16px;
+}
+
+.overlay form{
+    padding: 10px;
+}
+
+.overlay form img{
+    width: 30px;
+    height: 30px;
+}
+
+.postComment{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.form .postBtn{
+    font-size: 14px;
+}
+
+.emoji-input .emoji-icon {
+    top: 7px;
+}
