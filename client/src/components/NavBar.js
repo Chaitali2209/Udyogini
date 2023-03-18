@@ -50,7 +50,7 @@ export const NavBar = ({isLoggedIn,isRelative}) => {
               <>
               <Nav.Link href="/learn" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Learn</Nav.Link>
               <Nav.Link href="/supplier" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Grow</Nav.Link>
-              <Nav.Link href="/" className={activeLink === 'causes' ? 'active navbar-link' : 'navbar-link'} onClick={() => {}}>Connect</Nav.Link>
+              <Nav.Link href="/businessPage" className={activeLink === 'causes' ? 'active navbar-link' : 'navbar-link'} onClick={() => {}}>Connect</Nav.Link>
               </>:
               <>
                             <Nav.Link href="/login" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={(e) =>{ }}>Login</Nav.Link>
