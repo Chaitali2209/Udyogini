@@ -77,6 +77,11 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+@media only screen and (max-width: 600px){
+  #mydiv h1{
+    font-size:40px;
+  }
+}
 p.success {
 	color: dark green;
 }
